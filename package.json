@@ -1,0 +1,49 @@
+{
+  "name": "@waltz-controls/XXX",
+  "version": "1.0.0",
+  "description": "XXX",
+  "main": "dist/_virtual/index.esm.js",
+  "module": "dist/_virtual/index.esm.js",
+  "watch": {
+    "build": "{src,test}/*.js"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "rollup -c",
+    "prepublishOnly": "mv dist/_virtual/_rollup:plugin-multi-entry:entry-point dist/_virtual/index.esm.js",
+    "watch": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waltz-controls/XXX.git"
+  },
+  "keywords": [    
+    "waltz",
+    "waltz-controls",
+    "webix"
+  ],
+  "author": "Ingvord",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waltz-controls/XXX/issues"
+  },
+  "homepage": "https://github.com/waltz-controls/XXX#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-multi-entry": "^3.0.0",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^2.3.4"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.5"
+  },
+  "runtimeDependencies": [
+    "@waltz-controls/middleware",
+    "@waltz-controls/waltz-tango-rest-plugin",
+    "@waltz-controls/waltz-user-context-plugin",
+    "@waltz-controls/waltz-user-actions-plugin",
+    "rxjs",
+    "rxjs/operators",
+    "rxjs/fetch"
+  ]
+}
