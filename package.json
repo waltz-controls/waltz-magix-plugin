@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waltz-controls/XXX.git"
+    "url": "git+https://github.com/waltz-controls/waltz-magix-plugin.git"
   },
   "keywords": [
     "waltz",
