@@ -1,7 +1,7 @@
 {
-  "name": "@waltz-controls/XXX",
+  "name": "@waltz-controls/waltz-magix-plugin",
   "version": "1.0.0",
-  "description": "XXX",
+  "description": "waltz-magix-plugin",
   "main": "dist/_virtual/index.esm.js",
   "module": "dist/_virtual/index.esm.js",
   "watch": {
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/waltz-controls/XXX.git"
   },
-  "keywords": [    
+  "keywords": [
     "waltz",
     "waltz-controls",
     "webix"
@@ -25,9 +25,9 @@
   "author": "Ingvord",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/waltz-controls/XXX/issues"
+    "url": "https://github.com/waltz-controls/waltz-magix-plugin/issues"
   },
-  "homepage": "https://github.com/waltz-controls/XXX#readme",
+  "homepage": "https://github.com/waltz-controls/waltz-magix-plugin#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-multi-entry": "^3.0.0",
@@ -35,6 +35,7 @@
     "rollup": "^2.3.4"
   },
   "dependencies": {
+    "@ingvord/reliable-event-source": "^1.0.0",
     "rxjs": "^6.5.5"
   },
   "runtimeDependencies": [
