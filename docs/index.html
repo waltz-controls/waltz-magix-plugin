@@ -30,8 +30,8 @@
 
                     <li><a
                             class=""
-                            href='#broadcast'>
-                        broadcast
+                            href='#kreconnectiondelay'>
+                        kReconnectionDelay
 
                     </a>
 
@@ -39,9 +39,42 @@
 
 
                     <li><a
+                            class=" toggle-sibling"
+                            href='#magix'>
+                        Magix
+                        <span class='icon'>▸</span>
+                    </a>
+
+                        <div class='toggle-target display-none'>
+
+
+                            <ul class='list-reset py1-ul pl1'>
+                                <li class='h5'><span>Instance members</span></li>
+
+                                <li><a
+                                        class='regular pre-open'
+                                        href='#magixbroadcast'>
+                                    #broadcast
+                                </a></li>
+
+                                <li><a
+                                        class='regular pre-open'
+                                        href='#magixobserve'>
+                                    #observe
+                                </a></li>
+
+                            </ul>
+
+
+                        </div>
+
+                    </li>
+
+
+                    <li><a
                             class=""
-                            href='#observe'>
-                        observe
+                            href='#message'>
+                        Message
 
                     </a>
 
@@ -62,40 +95,22 @@
 
             <div class='clearfix'>
 
-                <h3 class='fl m0' id='broadcast'>
-                    broadcast
+                <h3 class='fl m0' id='kreconnectiondelay'>
+                    kReconnectionDelay
                 </h3>
 
 
             </div>
 
 
-            <p>Performs no-store cors post request to the magix server broadcasting the message</p>
+            <p>Default reconnection delay - 3000 ms</p>
 
-            <div class='pre p1 fill-light mt0'>broadcast(message: Message): <a
-                    href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a
-                    href="https://developer.mozilla.org/docs/Web/Guide/HTML/HTML5">Response</a>>
-            </div>
+            <div class='pre p1 fill-light mt0'>kReconnectionDelay</div>
 
-
-            <div class='py1 quiet mt1 prose-big'>Parameters</div>
-            <div class='prose'>
-
-                <div class='space-bottom0'>
-                    <div>
-                        <span class='code bold'>message</span> <code class='quiet'>(Message)</code>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class='py1 quiet mt1 prose-big'>Returns</div>
-            <code><a
-                    href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a
-                    href="https://developer.mozilla.org/docs/Web/Guide/HTML/HTML5">Response</a>></code>:
+            <p>
+                Type:
+                <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+            </p>
 
 
         </section>
@@ -106,19 +121,198 @@
 
             <div class='clearfix'>
 
-                <h3 class='fl m0' id='observe'>
-                    observe
+                <h3 class='fl m0' id='magix'>
+                    Magix
                 </h3>
 
 
             </div>
 
 
-            <div class='pre p1 fill-light mt0'>observe(): Observable&#x3C;Message></div>
+            <div class='pre p1 fill-light mt0'>new Magix()</div>
 
 
-            <div class='py1 quiet mt1 prose-big'>Returns</div>
-            <code>Observable&#x3C;Message></code>:
+            <div class='py1 quiet mt1 prose-big'>Properties</div>
+            <div>
+
+                <div class='space-bottom0'>
+                    <span class='code bold'>host</span> <code class='quiet'>(<a
+                        href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+
+
+                </div>
+
+                <div class='space-bottom0'>
+                    <span class='code bold'>broadcastUrl</span> <code class='quiet'>(<a
+                        href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+
+
+                </div>
+
+                <div class='space-bottom0'>
+                    <span class='code bold'>subscribeUrl</span> <code class='quiet'>(<a
+                        href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+
+
+                </div>
+
+                <div class='space-bottom0'>
+                    <span class='code bold'>source</span> <code class='quiet'>(ReliableEventSource)</code>
+
+
+                </div>
+
+            </div>
+
+
+            <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+            <div class="clearfix">
+
+                <div class='border-bottom' id='magixbroadcast'>
+                    <div class="clearfix small pointer toggle-sibling">
+                        <div class="py1 contain">
+                            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                            <span class='code strong strong truncate'>broadcast(message)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix display-none toggle-target">
+                        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+                            <p>Performs no-store cors post request to the magix server broadcasting the message</p>
+
+                            <div class='pre p1 fill-light mt0'>broadcast(message: <a href="#message">Message</a>): <a
+                                    href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a
+                                    href="https://developer.mozilla.org/docs/Web/Guide/HTML/HTML5">Response</a>>
+                            </div>
+
+
+                            <div class='py1 quiet mt1 prose-big'>Parameters</div>
+                            <div class='prose'>
+
+                                <div class='space-bottom0'>
+                                    <div>
+                                        <span class='code bold'>message</span> <code class='quiet'>(<a href="#message">Message</a>)</code>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class='py1 quiet mt1 prose-big'>Returns</div>
+                            <code><a
+                                    href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a
+                                    href="https://developer.mozilla.org/docs/Web/Guide/HTML/HTML5">Response</a>></code>:
+
+
+                        </section>
+
+                    </div>
+                </div>
+
+                <div class='border-bottom' id='magixobserve'>
+                    <div class="clearfix small pointer toggle-sibling">
+                        <div class="py1 contain">
+                            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                            <span class='code strong strong truncate'>observe()</span>
+                        </div>
+                    </div>
+                    <div class="clearfix display-none toggle-target">
+                        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+                            <div class='pre p1 fill-light mt0'>observe(): Observable&#x3C;<a href="#message">Message</a>>
+                            </div>
+
+
+                            <div class='py1 quiet mt1 prose-big'>Returns</div>
+                            <code>Observable&#x3C;<a href="#message">Message</a>></code>:
+
+
+                        </section>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+
+            <div class='clearfix'>
+
+                <h3 class='fl m0' id='message'>
+                    Message
+                </h3>
+
+
+            </div>
+
+
+            <div class='pre p1 fill-light mt0'>new Message()</div>
+
+
+            <div class='py1 quiet mt1 prose-big'>Properties</div>
+            <div>
+
+                <div class='space-bottom0'>
+                    <span class='code bold'>id</span> <code class='quiet'>((<a
+                        href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+                    |
+                    <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>))</code>
+
+
+                </div>
+
+                <div class='space-bottom0'>
+                    <span class='code bold'>parent</span> <code class='quiet'>((<a
+                        href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+                    |
+                    <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>))</code>
+
+
+                </div>
+
+                <div class='space-bottom0'>
+                    <span class='code bold'>user</span> <code class='quiet'>(<a
+                        href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+
+
+                </div>
+
+                <div class='space-bottom0'>
+                    <span class='code bold'>source</span> <code class='quiet'>(<a
+                        href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+
+
+                </div>
+
+                <div class='space-bottom0'>
+                    <span class='code bold'>target</span> <code class='quiet'>(<a
+                        href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+
+
+                </div>
+
+                <div class='space-bottom0'>
+                    <span class='code bold'>payload</span> <code class='quiet'>(any)</code>
+
+
+                </div>
+
+            </div>
+
+
+            <div class='py1 quiet mt1 prose-big'>Related</div>
+
+
+            <a href="https://github.com/waltz-controls/rfc/blob/master/1/message.md">https://github.com/waltz-controls/rfc/blob/master/1/message.md</a>
 
 
         </section>

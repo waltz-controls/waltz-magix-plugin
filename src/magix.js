@@ -3,8 +3,21 @@ import {map} from "rxjs/operators";
 import {Message} from "./message";
 
 
+/**
+ * Default reconnection delay - 3000 ms
+ *
+ * @constant
+ * @type {number}
+ */
 const kReconnectionDelay = 3000;
 
+/**
+ * @property {string} host
+ * @property {string} broadcastUrl
+ * @property {string} subscribeUrl
+ * @property {ReliableEventSource} source
+ * @class Magix
+ */
 export class Magix {
     constructor(host = '') {
         this.host = host;
