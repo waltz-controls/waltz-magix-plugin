@@ -37,5 +37,11 @@
   "dependencies": {
     "@ingvord/reliable-event-source": "^1.0.0",
     "rxjs": "^6.5.5"
-  }
+  },
+  "runtimeDependencies": [
+    "@ingvord/reliable-event-source",
+    "rxjs",
+    "rxjs/operators",
+    "rxjs/fetch"
+  ]
 }
