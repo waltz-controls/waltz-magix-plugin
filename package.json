@@ -1,6 +1,6 @@
 {
   "name": "@waltz-controls/waltz-magix-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "waltz-magix-plugin",
   "main": "dist/_virtual/index.esm.js",
   "module": "dist/_virtual/index.esm.js",
