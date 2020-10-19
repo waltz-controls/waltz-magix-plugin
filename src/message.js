@@ -10,11 +10,11 @@
  * @see https://github.com/waltz-controls/rfc/blob/master/1/message.md
  */
 export class Message {
-    constructor({id, parent, user, action, origin, target, payload}) {
+    constructor({id, parentId, user, action, origin, target, payload}) {
         if (!id) throw new Error("id must be specified")
         if (!origin) throw new Error("origin must be specified")
         this.id = id;
-        this.parent = parent;
+        this.parentId = parentId;
         this.user = user;
         this.action = action;
         this.origin = origin;
