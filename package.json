@@ -37,14 +37,5 @@
   "dependencies": {
     "@ingvord/reliable-event-source": "^1.0.0",
     "rxjs": "^6.5.5"
-  },
-  "runtimeDependencies": [
-    "@waltz-controls/middleware",
-    "@waltz-controls/waltz-tango-rest-plugin",
-    "@waltz-controls/waltz-user-context-plugin",
-    "@waltz-controls/waltz-user-actions-plugin",
-    "rxjs",
-    "rxjs/operators",
-    "rxjs/fetch"
-  ]
+  }
 }

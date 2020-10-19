@@ -7,7 +7,7 @@ export default [
     // browser-friendly UMD build
     {
         input: 'src/**/*.js',
-        external: pkg.runtimeDependencies,
+        external: Object.keys(pkg.dependencies),
         output: {
             dir: 'dist',
             format: 'es',
