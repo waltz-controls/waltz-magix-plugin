@@ -46,10 +46,11 @@ export class Magix {
 
     /**
      *
+     * @param {string} channel
      * @return {Observable<Message>}
      */
-    observe() {
-        return this.source.observe().pipe(
+    observe(channel = 'message') {
+        return this.source.observe(channel).pipe(
             map(msg => new Message(JSON.parse(msg.data)))
         )
     }
