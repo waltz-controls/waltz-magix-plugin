@@ -32,10 +32,11 @@ export class Magix {
      *
      *
      * @param {Message} message
+     * @param {string} channel
      * @return {Promise<Response>}
      */
-    broadcast(message) {
-        return fetch(this.broadcastUrl, {
+    broadcast(message, channel = 'message') {
+        return fetch(this.broadcastUrl + `?channel=${channel}`, {
             method: 'POST',
             mode: 'cors',
             cache: 'no-store',
